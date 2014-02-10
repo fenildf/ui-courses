@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-family: consolas;
+  line-height: 1.5em; }
+  body h2 {
+    font-size: 18px; }
+
+body .head {
+  background-color: #F5F5F5;
+  height: 50px; }
+  body .head .title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: consolas;
+    color: #555;
+    padding: 0 0 0 20px; }
+body .pager .prev {
+  float: left; }
+body .pager .next {
+  float: right; }
+body .pager .prev, body .pager .next {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  background-color: rgba(5, 178, 210, 0.2);
+  margin: 20px;
+  border-radius: 50px;
+  cursor: pointer; }
+  body .pager .prev i, body .pager .next i {
+    color: #666;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #05B2D2; }
+  body .pager .prev:hover, body .pager .next:hover {
+    background-color: #05B2D2; }
+    body .pager .prev:hover i, body .pager .next:hover i {
+      color: white; }
+body .pager .prev i {
+  margin-right: 3px; }
+body .pager .next i {
+  margin-left: 3px; }
+body .paper {
+  position: absolute;
+  top: 50px;
+  left: 88px;
+  right: 88px;
+  bottom: 0; }
+  body .paper .p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%; }
+    body .paper .p .play {
+      margin: 30px; }
+  body .paper .d {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%; }
+    body .paper .d .desc {
+      margin: 30px; }
+
+.play.chapter1 .font-arial {
+  font-size: 40px;
+  font-family: arial;
+  margin-bottom: 30px; }
+.play.chapter1 .font-consolas {
+  font-size: 40px;
+  font-family: consolas;
+  margin-bottom: 30px; }
+.play.chapter1 .font-impact {
+  font-size: 40px;
+  font-family: impact;
+  margin-bottom: 30px; }
+.play.chapter1 .font-times {
+  font-size: 40px;
+  font-family: 'times new roman';
+  margin-bottom: 30px; }
+.play.chapter1 .font-helvetica {
+  font-size: 40px;
+  font-family: helvetica;
+  margin-bottom: 30px; }
+.play.chapter1 .font-tahoma {
+  font-size: 40px;
+  font-family: tahoma;
+  margin-bottom: 30px; }
+.play.chapter1 .font-song {
+  font-size: 40px;
+  font-family: 宋体;
+  margin-bottom: 30px; }
+.play.chapter1 .font-hei {
+  font-size: 40px;
+  font-family: 黑体;
+  margin-bottom: 30px; }
+.play.chapter1 .font-yahei {
+  font-size: 40px;
+  font-family: 微软雅黑;
+  margin-bottom: 30px; }
