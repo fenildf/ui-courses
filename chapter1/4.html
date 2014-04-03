@@ -1,0 +1,30 @@
+<div class='play chapter1'>
+  <div class='image'>
+    <img src='chapter1/files/css.jpg' />
+  </div>
+</div>
+
+<div class='desc'>
+  <h2>在网页中通过CSS声明字体</h2>
+
+  <p>
+    通过 font-family 声明来指定某个选择器下的字体。<br/>
+    <code class='prettyprint lang-css'>
+      body { font-family: 'arial'; }
+    </code>
+
+    指定中文字体。<br/>
+    <code class='prettyprint lang-css'>
+      body { font-family: '微软雅黑'; }
+    </code>
+
+    同时指定多个字体时，系统会优先尝试以在前面的字体显示文字；<br/>
+    如果没有指定的字体，或者字体中不包括要显示的字符，就会以声明中后面的字体来显示。
+    <code class='prettyprint lang-css'>
+      body { font-family: 宋体, 'sans serif', tahoma, verdana, helvetica; }
+    </code>
+
+    进一步的信息可以参考：<br/>
+    <a href='http://www.w3school.com.cn/css/pr_font_font-family.asp' target='_blank'>http://www.w3school.com.cn/css/pr_font_font-family.asp</a>
+  </p>
+<div>

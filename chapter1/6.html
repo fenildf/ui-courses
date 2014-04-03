@@ -1,0 +1,57 @@
+<div class='play chapter1'>
+  <p style='font-family:arial;font-size:24px;'>
+    MindPin te#{a}m<br/>
+    http://4ye.com<br/>
+    arial
+  </p>
+
+  <p style='font-family:"times new roman";font-size:24px;'>
+    MindPin te#{a}m<br/>
+    http://4ye.com<br/>
+    times new roman
+  </p>
+
+  <br/>
+
+  <p style='font-family:consolas;font-size:24px;'>
+    MindPin te#{a}m<br/>
+    http://4ye.com<br/>
+    consolas
+  </p>
+
+  <p style='font-family:courier;font-size:24px;'>
+    MindPin te#{a}m<br/>
+    http://4ye.com<br/>
+    courier
+  </p>
+</div>
+
+<div class='desc'>
+  <h2>非等宽字体和等宽字体</h2>
+
+  <p>
+    非等宽字体的每个字符（包括大小写字母，数字符号，空格）宽度不一样。<br/>
+    适合用在标题，不带格式的用于阅读的文本段落。<br/><br/>
+
+    等宽字体的每个字符宽度一样，这样就能保证不同行的字符能对齐。<br/>
+    适合用来显示代码，比较规范化的描述类文本，以及对文字宽度要求比较严格的场合（如待办事项，报表类应用等）
+  </p>
+
+  <code class='prettyprint lang-yaml'>
+    Projects:<br/>
+    &nbsp;&nbsp;C/C++ Libraries:<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;- libyaml       # "C" Fast YAML 1.1<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;- Syck          # (dated) "C" YAML 1.0<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;- yaml-cpp      # C++ YAML 1.1 implementation<br/>
+  </code>
+
+  不用等宽字体的话，看上去会比较奇怪。
+  <code class='prettyprint lang-yaml' style='font-family:arial !important;'>
+    Projects:<br/>
+    &nbsp;&nbsp;C/C++ Libraries:<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;- libyaml       # "C" Fast YAML 1.1<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;- Syck          # (dated) "C" YAML 1.0<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;- yaml-cpp      # C++ YAML 1.1 implementation<br/>
+  </code>
+
+<div>

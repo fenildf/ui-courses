@@ -7,7 +7,13 @@ body {
   font-family: consolas;
   line-height: 1.5em; }
   body h2 {
-    font-size: 18px; }
+    font-size: 24px; }
+  body hr {
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: 0 none; }
 
 body .head {
   background-color: #F5F5F5;
@@ -41,32 +47,44 @@ body .pager .prev, body .pager .next {
     background-color: #05B2D2; }
     body .pager .prev:hover i, body .pager .next:hover i {
       color: white; }
+  body .pager .prev.disabled, body .pager .next.disabled {
+    background-color: #E0E0E0;
+    cursor: default !important; }
+    body .pager .prev.disabled i, body .pager .next.disabled i {
+      color: #6B6B6B; }
 body .pager .prev i {
   margin-right: 3px; }
 body .pager .next i {
   margin-left: 3px; }
-body .paper {
+body .document {
   position: absolute;
   top: 50px;
   left: 88px;
   right: 88px;
   bottom: 0; }
-  body .paper .p {
+  body .document .p {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 50%; }
-    body .paper .p .play {
+    body .document .p .play {
       margin: 30px; }
-  body .paper .d {
+  body .document .d {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 50%; }
-    body .paper .d .desc {
+    body .document .d .desc {
       margin: 30px; }
+body code {
+  font-family: consolas !important;
+  padding: 10px;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 10px; }
 
 .play.chapter1 .font-arial {
   font-size: 40px;
@@ -104,3 +122,27 @@ body .paper {
   font-size: 40px;
   font-family: 微软雅黑;
   margin-bottom: 30px; }
+.play.chapter1 .image {
+  position: relative; }
+  .play.chapter1 .image img {
+    width: 100%;
+    padding: 2px;
+    border: solid 1px #eee;
+    box-sizing: border-box; }
+  .play.chapter1 .image .idesc {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 20px;
+    bottom: 0;
+    right: 0;
+    left: 0; }
+  .play.chapter1 .image.p40 {
+    width: 40%;
+    margin-right: 5%;
+    float: left; }
+    .play.chapter1 .image.p40.clear {
+      clear: both; }
+  .play.chapter1 .image.max100 img {
+    max-width: 100%;
+    width: auto; }

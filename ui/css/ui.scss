@@ -7,7 +7,15 @@ body {
   line-height:1.5em;
 
   h2 {
-    font-size:18px;
+    font-size:24px;
+  }
+
+  hr {
+    display:block;
+    height:3px;
+    border-radius:3px;
+    background-color:#eee;
+    border:0 none;
   }
 }
 
@@ -42,16 +50,23 @@ body {
       }
 
       cursor:pointer;
+
       &:hover {
         background-color:#05B2D2;
         i {color:white;}
+      }
+
+      &.disabled {
+        background-color:#E0E0E0;
+        i {color:#6B6B6B;}
+        cursor:default !important;
       }
     }
     .prev i{margin-right:3px;}
     .next i{margin-left:3px;}
   }
 
-  .paper{
+  .document{
     // background-color:#000;
     position:absolute;
     top:50px;
@@ -76,6 +91,15 @@ body {
       }
     }
   }
+
+  code {
+    font-family: consolas !important;
+    padding:10px;
+    border-radius:3px;
+    display:block;
+    margin-bottom:20px;
+    margin-top:10px;
+  }
 }
 
 
@@ -90,4 +114,37 @@ body {
   .font-song{font-size:40px;font-family:宋体;margin-bottom:30px;}
   .font-hei{font-size:40px;font-family:黑体;margin-bottom:30px;}
   .font-yahei{font-size:40px;font-family:微软雅黑;margin-bottom:30px;}
+
+  .image {
+    position:relative;
+    img {
+      width:100%;
+      padding:2px;
+      border:solid 1px #eee;
+      box-sizing: border-box;
+    }
+    .idesc {
+      position:absolute;
+      color:white;
+      background-color:rgba(black, 0.8);
+      padding:5px 20px;
+      bottom:0;right:0;left:0;
+    }
+
+    &.p40 {
+      width:40%;
+      margin-right:5%;
+      float:left;
+      &.clear {
+        clear:both;
+      }
+    }
+
+    &.max100 {
+      img {
+        max-width: 100%;
+        width:auto;
+      }
+    }
+  }
 }

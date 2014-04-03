@@ -1,0 +1,28 @@
+<div class='play chapter1'>
+  <div class='image'>
+    <img src='chapter1/files/android.jpg' />
+  </div>
+</div>
+
+<div class='desc'>
+  <h2>在Android应用中指定字体</h2>
+
+  <p>
+    通过 Typeface 加载字体文件。<br/>
+    <code class='prettyprint lang-java'>
+      Typeface font = Typeface.createFromAsset( <br/>
+      &nbsp;&nbsp;EshareApplication.context.getAssets(), <br/>
+      &nbsp;&nbsp;"fonts/fontawesome-webfont.ttf") <br/>
+      <br/>
+
+      textview.setTypeface(font);
+    </code>
+
+    在 4ye.me android 客户端源码中，通过这样的方式加载了 font-awesome 字体。<br/><br/>
+
+    android 本身自带一些字体常量，如等宽字体：
+    <code class='prettyprint lang-java'>
+      textview.setTypeface(Typeface.MONOSPACE)
+    </code>
+  </p>
+<div>

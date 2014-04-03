@@ -1,0 +1,45 @@
+<div class='play chapter1'>
+  <div class='image p40'>
+    <img src='chapter1/files/fontsize.png' />
+  </div>
+</div>
+
+<div class='desc'>
+  <h2>Android 中的文字大小设置</h2>
+
+  <p>
+    xml 中声明
+    <code class='prettyprint lang-xml'>
+      &lt;TextView<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;android:text="用户登录"<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;android:textSize="20dp" /&gt;<br/>
+    </code>
+
+    <br/>
+    程序中指定
+    <code class='prettyprint lang-java'>
+      textview.setTextSize(18);
+    </code>
+    <b>注意，这里默认的单位是 sp</b>，这是一个坑。<br/>
+    为什么说是坑？因为 getTextSize 方法返回的数据，单位是 px ..<br/><br/>
+
+
+    <b>sp 是啥米意思？</b><br/>
+    因为 android 允许用户设置文字尺寸，能设成小，正常，大，超大等。<br/>
+    当设置为“正常”时，1sp = 1dp <br/>
+    设置为其他尺寸时，sp会变化，dp不会变化<br/><br/>
+
+    如果想避免坑，可以用带单位的API
+    <code class='prettyprint lang-java'>
+      textview.setTextSize(int unit, int size);<br/>
+      // TypedValue.COMPLEX_UNIT_PX  : Pixels<br/>
+      // TypedValue.COMPLEX_UNIT_SP  : Scaled Pixels<br/>
+      // TypedValue.COMPLEX_UNIT_DIP : Device Independent Pixels<br/>
+    </code>
+    来设置文字大小<br/><br/>
+
+    几个单位的区别可以参考：
+    <a href='http://www.cnblogs.com/bjzhanghao/archive/2012/11/06/2757300.html' target='_blank'>http://www.cnblogs.com/bjzhanghao/archive/2012/11/06/2757300.html</a>
+  </p>
+
+<div>
